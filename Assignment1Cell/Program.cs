@@ -89,7 +89,7 @@ namespace Assignment1Cell
                 for (int j = n - 1; j <= n + 1; j++)
                     neighbour += CellularAutomata[i, j];
 
-            return neighbour - CellularAutomata[m, n];           // [i,j] is also included , so just remove it :)
+            return neighbour - CellularAutomata[m, n];           // [m,n] is also included , so just remove it :)
 
 
         }
@@ -116,6 +116,8 @@ public void NextGeneration ()
                     {
                         TempCA[i, j] = 0;
                     }
+
+                    // this rule was not there in the question , but i added it so that it could be Turing-Complete :)
 
                     else if (CellularAutomata[i, j] == 1 && alive > 3)
                     {
