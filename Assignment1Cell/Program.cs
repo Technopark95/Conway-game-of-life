@@ -12,12 +12,6 @@ namespace Assignment1Cell
     {
 
 
-        public void InvalidInputRange()
-        {
-            Console.WriteLine("Invalid Input, Try again");
-        }
-
-
         public void MinimumError()
         {
             Console.WriteLine("Minimum length for row and col is 1. Closing Application.");
@@ -190,35 +184,15 @@ public void NextGeneration ()
                                                           // O  = Live cell 
 
 
-
+reinout:
             Console.WriteLine("Do you want animation ? y/n");   // Prompting user if he wants animation or the steps.
-
+  
             char choice = ' ';
 
-            try
-            {
+          
 
                 choice = Console.ReadKey().KeyChar;
 
-                if (choice != 'Y' || choice != 'y' || choice != 'N' || choice != 'n')
-                {
-
-                    throw new ExpectionCollection();
-                }
-
-            }
-            catch(ExpectionCollection e)
-            {
-
-                e.InvalidInputRange();
-
-    
-             
-            }
-
-
-
-          
 
 
             if (choice == 'y' || choice == 'Y')    // If animation is selected
@@ -265,8 +239,13 @@ public void NextGeneration ()
 
             }
 
-            else 
-                Console.WriteLine("Visit Us again!");
+
+            else {
+
+                Console.WriteLine("\nInvalid Input Try again\n");
+
+                goto reinout; }
+         
          
 
             Console.ReadKey();
