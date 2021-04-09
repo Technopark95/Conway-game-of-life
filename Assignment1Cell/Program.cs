@@ -113,11 +113,16 @@ public void NextGeneration ()
                     // Rules for the Life game as mentioned in the question paper.
 
 
+                    //Death by underpopulation
+
                     if (CellularAutomata[i, j] == 1 && alive < 2)
                     {
                         TempCA[i, j] = 0;
                     }
 
+
+
+                    // Death by overpopulation
                     // this rule was not there in the question , but i added it so that it could be Turing-Complete :)
 
                     else if (CellularAutomata[i, j] == 1 && alive > 3)
@@ -126,11 +131,15 @@ public void NextGeneration ()
                     }
 
 
+                    //Survival
+
                     else if (CellularAutomata[i, j] == 1 && (alive == 2 || alive == 3))
                     {
                         TempCA[i, j] = 1;
                     }
 
+
+                    //Rebirth
 
                     else if (CellularAutomata[i, j] == 0 && alive == 3)
                     {
