@@ -9,4 +9,4 @@ Assignment I-280
 ###3. Raises Exceptions if grid length is 0
 
 
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+![Alt Text](https://github.com/Technopark95/Conway-game-of-life/blob/main/screen-capture.gif?raw=true)
