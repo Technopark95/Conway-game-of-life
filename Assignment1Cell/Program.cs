@@ -259,19 +259,15 @@ public void NextGeneration ()
 
                 Console.WriteLine("\nInvalid Input Try again\n");
 
-                goto reinout; }
+                goto reinout;
+
+            }
          
-         
-
-            Console.ReadKey();
-
-
+               Console.ReadKey();
 
 
         }
     }
-
-
 
 
 
