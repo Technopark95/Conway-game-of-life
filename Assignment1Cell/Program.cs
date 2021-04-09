@@ -112,6 +112,7 @@ public void NextGeneration ()
 
                     // Rules for the Life game as mentioned in the question paper.
 
+
                     if (CellularAutomata[i, j] == 1 && alive < 2)
                     {
                         TempCA[i, j] = 0;
@@ -125,13 +126,16 @@ public void NextGeneration ()
                     }
 
 
-                    else if (CellularAutomata[i, j] == 0 && alive == 3)
+                    else if (CellularAutomata[i, j] == 1 && (alive == 2 || alive == 3))
                     {
                         TempCA[i, j] = 1;
                     }
 
 
-                    else TempCA[i, j] = CellularAutomata[i, j];
+                    else if (CellularAutomata[i, j] == 0 && alive == 3)
+                    {
+                        TempCA[i, j] = 1;
+                    }
 
 
 
@@ -186,7 +190,7 @@ public void NextGeneration ()
                                                           // O  = Live cell 
 
 
-reinout:
+             reinout:
             Console.WriteLine("Do you want animation ? y/n");   // Prompting user if he wants animation or the steps.
   
             char choice = ' ';
