@@ -9,5 +9,10 @@ Assignment week-01   I-280
 ### 2.Ouput symbols are customizable
 ### 3. Raises Exceptions if grid length is 0
 
-
+# here is an Oscillator
 ![Alt Text](https://github.com/Technopark95/Conway-game-of-life/blob/main/screen-capture.gif?raw=true)
+
+
+# Here is a glider
+![Alt Text](https://github.com/Technopark95/Conway-game-of-life/blob/main/glider.gif?raw=true)
+
