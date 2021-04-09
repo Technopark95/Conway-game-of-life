@@ -1,5 +1,4 @@
-# Conway-game-of-life
-Assignment I-280 
+Assignment week-01   I-280 
 
 
 # Welcome to the Conway's Game of Life
