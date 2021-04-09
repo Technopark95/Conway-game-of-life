@@ -4,8 +4,8 @@ Assignment I-280
 
 ## Welcome to the Conway's Game of Life
 
-### 1.Grid are fully Custumizable 
-### 2.Ouput symbols are custumizable
+### 1.Grid are fully Customizable 
+### 2.Ouput symbols are customizable
 ### 3. Raises Exceptions if grid length is 0
 
 
