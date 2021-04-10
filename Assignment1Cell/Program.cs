@@ -8,7 +8,6 @@ using ConwayGameLib;
 namespace Assignment1Cell
 {
 
-
     class Program
     {
         static void Main(string[] args)
