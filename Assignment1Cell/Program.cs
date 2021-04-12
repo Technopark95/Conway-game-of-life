@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +8,7 @@ using ConwayGameLib;
 namespace Assignment1Cell
 {
 
+
     class Program
     {
         static void Main(string[] args)
@@ -16,13 +17,33 @@ namespace Assignment1Cell
             const char DeadCell = '.';
             const char AliveCell = 'O';
 
-            Conwaygame game = new Conwaygame(DeadCell , AliveCell);  // Creating instance of the Conwaygame class and assigning the custom visual char
-                                                          // For example 
-                                                          // .  = Dead cell
-                                                          // O  = Live cell 
+
+           int[,] grid;
+
+            grid = new int[,] {
+
+            { 0,0,0,0,0,0,0,0,0,0,0,0,0},
+            { 0,0,1,0,0,0,0,0,0,0,0,0,0},
+            { 0,0,0,1,0,0,0,0,0,0,0,0,0},
+            { 0,1,1,1,0,0,0,0,0,0,0,0,0},
+            { 0,0,0,0,0,0,0,0,0,0,0,0,0},
+            { 0,0,0,0,0,0,0,0,0,0,0,0,0},
+            { 0,0,0,0,0,0,0,0,0,0,0,0,0},
+            { 0,0,0,0,0,0,0,0,0,0,0,0,0},
+            { 0,0,0,0,0,0,0,0,0,0,0,0,0},
+            { 0,0,0,0,0,0,0,0,0,0,0,0,0},
+
+            };
+
+            Conwaygame game = new Conwaygame(grid, DeadCell , AliveCell);  // Creating instance of the Conwaygame class and assigning the custom visual char
+                                                                     // For example 
+                                                                     // .  = Dead cell
+                                                                     // O  = Live cell 
+
+       
 
 
-         
+
             Console.WriteLine("Do you want animation ? y/n");   // Prompting user if he wants animation or the steps.
   
             char choice = ' ';
