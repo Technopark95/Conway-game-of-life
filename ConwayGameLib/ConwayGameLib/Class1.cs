@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace ConwayGameLib
 {
 
-   public class ExpectionCollection : Exception
+    public class ExpectionCollection : Exception
     {
 
 
@@ -23,35 +23,27 @@ namespace ConwayGameLib
     }
 
 
-   public class Conwaygame
+    public class Conwaygame
     {
 
         private int M;
         private int N;
 
-        private int[,] CellularAutomata;
+        public int[,] CellularAutomata;
         private int[,] TempCA;
 
         private char dead;
         private char alive;
 
-        public Conwaygame(char newdead = '0', char newalive = '1')
+        public Conwaygame(int[,] grid, char newdead = '0', char newalive = '1')
         {
 
+            
             dead = newdead;
             alive = newalive;
 
-            // you can edit this grid to make different generation :)
-            CellularAutomata = new int[,]{
 
-            { 0,0,0,0,0},
-            { 0,0,1,0,0},
-            { 0,0,1,0,0},
-            { 0,0,1,0,0},
-            { 0,0,0,0,0},
-
-
-        };
+            CellularAutomata = grid;
 
             try
             {
@@ -155,7 +147,7 @@ namespace ConwayGameLib
         }
 
 
-        public void Printgeneration ()
+        public void Printgeneration()
         {
             // Printing the grid 
 
@@ -187,4 +179,5 @@ namespace ConwayGameLib
 
 
     }
+
 }
